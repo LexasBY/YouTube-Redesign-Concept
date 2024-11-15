@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalise.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
     <title>Document</title>
   </head>
   <body>
@@ -70,5 +71,152 @@
         </div>
       </div>
     </header>
+
+    <div class="layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <nav class="sidebar__nav">
+
+          <a href="#" class="sidebar__nav-link sidebar__nav-link--active">
+            <img
+              src="./assets/svgs/home.svg"
+              class="sidebar__nav-link__image"
+            />
+            <span class="sidebar__nav-link__text">Home</span>
+          </a>
+
+          <a href="#" class="sidebar__nav-link">
+            <img
+              src="./assets/svgs/trending.svg"
+              alt="Trending"
+              class="sidebar__nav-link__icon"
+            />
+            <span class="sidebar__nav-link__text">Trending</span>
+          </a>
+          <a href="#" class="sidebar__nav-link">
+            <img
+              src="./assets/svgs/subscription.svg"
+              alt="Subscriptions"
+              class="sidebar__nav-link__icon"
+            />
+            <span class="sidebar__nav-link__text">Subscriptions</span>
+          </a>
+          <a href="#" class="sidebar__nav-link">
+            <img
+              src="./assets/svgs/library.svg"
+              alt="Library"
+              class="sidebar__nav-link__icon"
+            />
+            <span class="sidebar__nav-link__text">Library</span>
+          </a>
+
+          <a href="#" class="sidebar__nav-link">
+            <img
+              src="./assets/svgs/history.svg"
+              alt="History"
+              class="sidebar__nav-link__icon"
+            />
+            <span class="sidebar__nav-link__text">History</span>
+          </a>
+          <a href="#" class="sidebar__nav-link">
+            <img
+              src="./assets/svgs/watchlater.svg"
+              alt="Watch later"
+              class="sidebar__nav-link__icon"
+            />
+            <span class="sidebar__nav-link__text">Watch later</span>
+          </a>
+          <a href="#" class="sidebar__nav-link">
+            <img
+              src="./assets/svgs/favourites.svg"
+              alt="Favourites"
+              class="sidebar__nav-link__icon"
+            />
+            <span class="sidebar__nav-link__text">Favourites</span>
+          </a>
+
+          <a href="#" class="sidebar__nav-link">
+            <img
+              src="./assets/svgs/liked-videos.svg"
+              alt="Liked videos"
+              class="sidebar__nav-link__icon"
+            />
+            <span class="sidebar__nav-link__text">Liked videos</span>
+          </a>
+
+          <a href="#" class="sidebar__nav-link">
+            <img
+              src="./assets/svgs/music.svg"
+              alt="Musik"
+              class="sidebar__nav-link__icon"
+            />
+            <span class="sidebar__nav-link__text">Musik</span>
+          </a>
+
+          <a href="#" class="sidebar__nav-link">
+            <img
+              src="./assets/svgs/games.svg"
+              alt="Games"
+              class="sidebar__nav-link__icon"
+            />
+            <span class="sidebar__nav-link__text">Games</span>
+          </a>
+          <a href="#" class="sidebar__nav-link">
+            <img
+              src="./assets/svgs/show-more.svg"
+              alt="Show more"
+              class="sidebar__nav-link__icon"
+            />
+            <span class="sidebar__nav-link__text">Show more</span>
+          </a>
+        </nav>
+        <div class="sidebar__subscriptions">
+          <h3>Subscriptions</h3>
+          <!-- Список подписок -->
+        </div>
+        <div class="sidebar__settings">
+          <!-- Ссылка на настройки -->
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Profile Section -->
+        <section class="profile-section">
+          <img
+            src="profile-pic.jpg"
+            alt="Profile picture"
+            class="profile-section__image"
+          />
+          <span class="profile-section__name">Dollie Blair</span>
+        </section>
+
+        <!-- Video Carousel -->
+        <section class="video-carousel">
+          <!-- Здесь можно реализовать карусель видео -->
+        </section>
+
+        <!-- Recommended Section -->
+        <section class="recommended">
+          <h2 class="recommended__title">Recommended</h2>
+          <div class="recommended__videos">
+            <!-- Блоки видео -->
+          </div>
+        </section>
+
+        <!-- Food & Drink Section -->
+        <section class="food-drink">
+          <h2 class="food-drink__title">
+            Food & Drink
+            <span class="food-drink__subtitle"
+              >Recommended channel for you</span
+            >
+          </h2>
+          <div class="food-drink__videos">
+            <!-- Блоки видео в категории Food & Drink -->
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
