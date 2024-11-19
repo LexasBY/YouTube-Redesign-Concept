@@ -1,5 +1,5 @@
 .header {
-  .header__container {
+  .wrapper {
     margin: 0 auto;
     max-width: 1920px;
     display: flex;
@@ -130,7 +130,7 @@
 }
 
 @media (max-width: 552px) {
-  .header__container {
+  .wrapper {
     padding: 10px 16px 16px;
   }
 

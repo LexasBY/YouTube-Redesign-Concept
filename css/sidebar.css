@@ -4,7 +4,7 @@
   align-items: flex-start;
   padding-left: 28px;
   width: 250px;
-  height: 1086px;
+  height: 100%;
 }
 
 .sidebar__nav {
@@ -25,16 +25,121 @@
   align-items: center;
   gap: 15px;
   text-decoration: none;
+  color: #898989;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.08px;
 }
 
-.sidebar__nav-link__image {
+.sidebar__nav-link:hover {
+  color: #555;
+}
+
+.sidebar__nav-link .sidebar__nav-icon {
   justify-self: center;
+}
+
+.sidebar__nav-link .sidebar__nav-text {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #898989;
+}
+
+.sidebar__nav-link:hover .sidebar__nav-text {
+  color: #555;
+}
+
+.sidebar__subscriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.sidebar__subscriptions-title {
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: left;
+  margin: 0;
+}
+
+.sidebar__subscriptions-link {
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  align-items: center;
+  gap: 13px;
+  height: 26px;
+  text-decoration: none;
+}
+
+.sidebar__subscriptions-link .sidebar__subscriptions-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sidebar__subscriptions-link .sidebar__subscriptions-text {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.08px;
+  color: #898989;
+  cursor: pointer;
+}
+
+.sidebar__subscriptions-link:hover .sidebar__subscriptions-text {
+  color: #555;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: #898989;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.08px;
+}
+
+.sidebar__link:hover {
+  color: #555;
+}
+
+.sidebar__settings {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 7px;
+  margin-top: 104px;
+}
+
+.sidebar__settings .sidebar__settings-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar__settings .sidebar__settings-text {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #898989;
+}
+
+.sidebar__settings:hover .sidebar__settings-text {
+  color: #555;
 }
 
 @media (max-width: 768px) {
   .sidebar {
     position: fixed;
-    background-color: #f4f4f4; /* Замените на свой цвет */
+    background-color: #f4f4f4;
     bottom: 0;
     left: 0;
     padding: 30px 0;
@@ -69,6 +174,10 @@
     gap: 5px;
   }
 
+  .sidebar__subscriptions {
+    display: none;
+  }
+
   .sidebar__settings {
     display: none;
   }
@@ -86,14 +195,4 @@
   .sidebar__nav-link__text {
     font: normal 400 10px/13px "Mulish", sans-serif;
   }
-}
-
-.sidebar__nav-link__text {
-  font: normal 400 16px/20px "Mulish", sans-serif;
-  color: #898989;
-  cursor: pointer;
-}
-
-.sidebar__nav-link__text:hover {
-  color: #555;
 }
