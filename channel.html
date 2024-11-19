@@ -232,229 +232,164 @@
         </aside>
 
         <main class="main-content">
-          <article class="profile-carousel-wrapper">
-            <section class="preview">
-              <div class="preview__header">
-                <div class="profile-section">
+          <section class="channel-page">
+            <div class="channel-page__image"></div>
+            <section class="channel-page__main">
+              <div class="channel-page__header">
+                <div class="channel-page__header-left-side-container">
                   <img
-                    src="./assets/imgs/userpic-dollie.png"
-                    alt="Profile picture"
-                    class="profile-section__image"
+                    src="./assets/imgs/userpic-margaret.png"
+                    alt="user logo"
+                    class="channel-page__logo"
                   />
-                  <h3 class="profile-section__name">Dollie Blair</h3>
+                  <h3 class="channel-page__owner-name">Margaret Phelps</h3>
+                  <p class="channel-page__subscription-info caption">
+                    <span class="channel-page__subscription-value">245K</span>
+                    subscribed
+                  </p>
                 </div>
-                <div class="preview__controls">
-                  <img
-                    src="./assets/svgs/arrow-left.svg"
-                    alt="Previous"
-                    class="preview__control preview__control--left"
-                  />
-                  <img
-                    src="./assets/svgs/arrow-right.svg"
-                    alt="Next"
-                    class="preview__control preview__control--right"
-                  />
+
+                <div class="channel-page__header-right-side-container">
+                  <a href="#">
+                    <img
+                      src="./assets/svgs/bell.svg"
+                      class="channel-page__notification-icon"
+                    />
+                  </a>
+                  <button class="button">
+                    Subscribe <span class="button-value">2.3m</span>
+                  </button>
                 </div>
               </div>
+              <div class="channel-page__main-container">
+                <div class="channel-page__sections-links section-links">
+                  <div class="sections-links__list">
+                    <ul class="sections-links__list-general-elements">
+                      <li class="section-links__item">
+                        <a
+                          href="#"
+                          class="sections-links__link sections-links__link_active"
+                          >Home</a
+                        >
+                      </li>
+                      <li class="sections-links__item">
+                        <a href="#" class="sections-links__link">Videos</a>
+                      </li>
+                      <li class="sections-links__item">
+                        <a href="#" class="sections-links__link">Playlists</a>
+                      </li>
+                      <li
+                        class="sections-links__item sections-links__item-more-arrow"
+                      >
+                        <img
+                          src="./assets/svgs/more-arrow.svg"
+                          class="sections-links__search-icon"
+                        />
+                      </li>
+                    </ul>
 
-              <div class="preview__body">
-                <div class="video">
-                  <div class="video__thumbnail">
-                    <img
-                      src="./assets/imgs/video-image-1.jpg"
-                      alt="Astronomy Or Astrology"
-                      class="video__image"
-                    />
-                    <span class="video__duration">4:15</span>
-                  </div>
-                  <h4 class="video__title">A Brief History Of Creation</h4>
-                  <div class="video__info">
-                    <span class="video__views caption">80k views</span>
-                    <span class="video-card__views">&#183;</span>
-                    <span class="video__time-ago caption">3 days aga</span>
-                    <span class="video__category caption">Dollie Blair</span>
-                  </div>
-                </div>
-                <div class="video">
-                  <div class="video__thumbnail">
-                    <img
-                      src="./assets/imgs/video-image-2.jpg"
-                      alt="Astronomy Or Astrology"
-                      class="video__image"
-                    />
-                    <span class="video__duration">8:00</span>
-                  </div>
-                  <h4 class="video__title">Selecting The Right Hotel</h4>
-                  <div class="video__info">
-                    <span class="video__views caption">123k views</span>
-                    .
-                    <span class="video__time-ago caption">1 months ago</span>
-                    <span class="video__category caption">Dollie Blair</span>
+                    <ul class="sections-links__list-additional-elements">
+                      <li class="sections-links__item">
+                        <a href="#" class="sections-links__link">Channels</a>
+                      </li>
+                      <li class="sections-links__item">
+                        <a href="#" class="sections-links__link">Discussion</a>
+                      </li>
+                      <li class="sections-links__item">
+                        <a href="#" class="sections-links__link">About</a>
+                      </li>
+                      <li class="sections-links__item">
+                        <img
+                          src="./assets/svgs/search.svg"
+                          class="sections-links__search-icon"
+                        />
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="video">
-                  <div class="video__thumbnail">
+                <div class="channel-page__video-description video-description">
+                  <div
+                    class="video-description__show show-container show-container_channel-page"
+                  >
                     <img
-                      src="./assets/imgs/video-image-3.jpg"
-                      alt="Advertising Outdoors"
-                      class="video__image"
+                      src="./assets/imgs/video-image-16.jpg"
+                      class="video-description__image show"
                     />
-                    <span class="video__duration">5:32</span>
+                    <span class="video-description__time show__time">7:36</span>
                   </div>
-                  <h4 class="video__title">Asteroids</h4>
-                  <div class="video__info">
-                    <span class="video__views caption">43k views</span>
-                    .
-                    <span class="video__time-ago caption">12 days ago</span>
-                    <span class="video__category caption">Dollie Blair</span>
-                  </div>
-                </div>
-                <div class="video">
-                  <div class="video__thumbnail">
-                    <img
-                      src="./assets/imgs/video-image-4.jpg"
-                      alt="Astronomy Or Astrology"
-                      class="video__image"
-                    />
-                    <span class="video__duration">6:40</span>
-                  </div>
-                  <h4 class="video__title">Telescopes 101</h4>
-                  <div class="video__info">
-                    <span class="video__views caption">11k views</span>
-                    .
-                    <span class="video__time-ago caption">6 months ago</span>
-                    <span class="video__category caption">Dollie Blair</span>
-                  </div>
-                </div>
-                <div class="video">
-                  <div class="video__thumbnail">
-                    <img
-                      src="./assets/imgs/video-image-5.jpg"
-                      alt="Astronomy Or Astrology"
-                      class="video__image"
-                    />
-                    <span class="video__duration">1:45</span>
-                  </div>
-                  <h4 class="video__title">Medical Care Is Just</h4>
-                  <div class="video__info">
-                    <span class="video__views caption">18k views</span>
-                    .
-                    <span class="video__time-ago caption">2 days ago</span>
-                    <span class="video__category caption">Dollie Blair</span>
+                  <div class="video-description__info">
+                    <p class="video-description__title">
+                      Choosing The Best Audio Player Software For Your Computer
+                    </p>
+                    <p class="video-description__text">
+                      Your cheap internet-based banner advertising will become
+                      one of the sought for ads there are. Today, the world of
+                      Internet advertising is rapidly evolving beyond banner ads
+                      and intrusive pop-ups. Bayles A common medium for
+                      advertising on the Internet is the use of banner ads.
+                    </p>
+                    <div class="video-description__details">
+                      <span class="video-description__views caption"
+                        >54k views</span
+                      >
+                      <span class="video-description__time caption"
+                        >11 months ago</span
+                      >
+                    </div>
                   </div>
                 </div>
 
-                <div class="video">
-                  <div class="video__thumbnail">
+                <div
+                  class="channel-page__subscriptions sidebar__subscriptions subscriptions subscriptions_big"
+                >
+                  <h3
+                    class="subscriptions__title subscriptions__title_small caption"
+                  >
+                    Recommended channel
+                  </h3>
+                  <div
+                    class="subscriptions__item subscription-link subscription-link_big"
+                  >
                     <img
-                      src="./assets/imgs/video-image-6.jpg"
-                      alt="Astronomy Or Astrology"
-                      class="video__image"
-                    />
-                    <span class="video__duration">2:08</span>
+                      src="./assets/imgs/userpic-flora.png"
+                      class="subscription-link__icon"
+                    /><span
+                      class="subscriptions__item-text subscription-link__text"
+                      >Flora Benson</span
+                    >
                   </div>
-                  <h4 class="video__title">Moon Gazing</h4>
-                  <div class="video__info">
-                    <span class="video__views caption">67k views</span>
-                    .
-                    <span class="video__time-ago caption">4 months ago</span>
-                    <span class="video__category caption">Dollie Blair</span>
+                  <div
+                    class="subscriptions__item subscription-link subscription-link_big"
+                  >
+                    <img
+                      src="./assets/imgs/userpic-violet.png"
+                      class="subscription-link__icon"
+                    /><span
+                      class="subscriptions__item-text subscription-link__text"
+                      >Violet Cobb</span
+                    >
+                  </div>
+                  <div
+                    class="subscriptions__item subscription-link subscription-link_big"
+                  >
+                    <img
+                      src="./assets/imgs/userpic-phillip.png"
+                      class="subscription-link__icon"
+                    /><span
+                      class="subscriptions__item-text subscription-link__text"
+                      >Phillip Mullins</span
+                    >
                   </div>
                 </div>
               </div>
             </section>
-          </article>
-
-          <!-- Recommended Section -->
-          <section class="preview preview--large">
-            <div class="preview__header">
-              <h3 class="preview__title">Recommended</h3>
-              <div class="preview__controls">
-                <img
-                  src="./assets/svgs/arrow-left.svg"
-                  alt="Previous"
-                  class="preview__control preview__control--left"
-                />
-                <img
-                  src="./assets/svgs/arrow-right.svg"
-                  alt="Next"
-                  class="preview__control preview__control--right"
-                />
-              </div>
-            </div>
-          
-            <div class="preview__body preview__body--large">
-              <div class="video video--large">
-                <div class="video__thumbnail video__thumbnail--large">
-                  <img
-                    src="./assets/imgs/video-image-7.jpg"
-                    alt="Dude You Re Getting A Telescope"
-                    class="video__image"
-                  />
-                  <span class="video__duration">3:40</span>
-                </div>
-                <h4 class="video__title">Dude You Re Getting A Telescope</h4>
-                <div class="video__info">
-                  <span class="video__views caption">34k views</span>
-                  .
-                  <span class="video__time-ago caption">5 months ago</span>
-                  <span class="video__category caption">Gussie French</span>
-                </div>
-              </div>
-              <div class="video video--large">
-                <div class="video__thumbnail video__thumbnail--large">
-                  <img
-                    src="./assets/imgs/video-image-8.jpg"
-                    alt="Moon Gazing"
-                    class="video__image"
-                  />
-                  <span class="video__duration">2:12</span>
-                </div>
-                <h4 class="video__title">Moon Gazing</h4>
-                <div class="video__info">
-                  <span class="video__views caption">54k views</span>
-                  .
-                  <span class="video__time-ago caption">11 months ago</span>
-                  <span class="video__category caption">Edward Osborne</span>
-                </div>
-              </div>
-              <div class="video video--large">
-                <div class="video__thumbnail video__thumbnail--large">
-                  <img
-                    src="./assets/imgs/video-image-9.jpg"
-                    alt="Moon Gazing"
-                    class="video__image"
-                  />
-                  <span class="video__duration">2:19</span>
-                </div>
-                <h4 class="video__title">Moon Gazing</h4>
-                <div class="video__info">
-                  <span class="video__views caption">125k views</span>
-                  .
-                  <span class="video__time-ago caption">15 days ago</span>
-                  <span class="video__category caption">Dollie Banks</span>
-                </div>
-              </div>
-            </div>
           </section>
-          
 
-          <!-- Food & Drink Section -->
+          <!-- Margaret Phelps videos Section -->
           <section class="preview">
             <div class="preview__header">
-              <div class="profile-section">
-                <img
-                  src="./assets/imgs/userpic-orange.jpg"
-                  alt="Profile picture"
-                  class="profile-section__image"
-                />
-                <h3 class="profile-section__name">Food & Drink</h3>
-                <h4 class="caption">Recommended channel for you</h4>
-              </div>
+              <h3 class="preview__title">Margaret Phelps videos</h3>
               <div class="preview__controls">
-                <button class="button">
-                  Subscribe <span class="button-value">2.3m</span>
-                </button>
                 <img
                   src="./assets/svgs/arrow-left.svg"
                   alt="Previous"
@@ -472,33 +407,50 @@
               <div class="video">
                 <div class="video__thumbnail">
                   <img
-                    src="./assets/imgs/video-image-10.jpg"
+                    src="./assets/imgs/video-image-18.jpg"
                     alt="Astronomy Or Astrology"
                     class="video__image"
                   />
-                  <span class="video__duration">7:36</span>
+                  <span class="video__duration">7:08</span>
                 </div>
                 <h4 class="video__title">Astronomy Or Astrology</h4>
                 <div class="video__info">
                   <span class="video__views caption">240k views</span>
-                  .
-                  <span class="video__time-ago caption">4 months aga</span>
+                  <span class="video-card__views">&#183;</span>
+                  <span class="video__time-ago caption">4 months ago</span>
                   <span class="video__category caption">Food & Drink</span>
                 </div>
               </div>
               <div class="video">
                 <div class="video__thumbnail">
                   <img
-                    src="./assets/imgs/video-image-11.jpg"
+                    src="./assets/imgs/video-image-19.jpg"
+                    alt="Astronomy Or Astrology"
+                    class="video__image"
+                  />
+                  <span class="video__duration">7:08</span>
+                </div>
+                <h4 class="video__title">Astronomy Or Astrology</h4>
+                <div class="video__info">
+                  <span class="video__views caption">240k views</span>
+                  <span class="video-card__views">&#183;</span>
+                  <span class="video__time-ago caption">4 months ago</span>
+                  <span class="video__category caption">Food & Drink</span>
+                </div>
+              </div>
+              <div class="video">
+                <div class="video__thumbnail">
+                  <img
+                    src="./assets/imgs/video-image-20.jpg"
                     alt="Advertising Outdoors"
                     class="video__image"
                   />
                   <span class="video__duration">2:19</span>
                 </div>
-                <h4 class="video__title">Advertising Outdoors</h4>
+                <h4 class="video__title">Astronomy Or Astrology</h4>
                 <div class="video__info">
                   <span class="video__views caption">13k views</span>
-                  .
+                  <span class="video-card__views">&#183;</span>
                   <span class="video__time-ago caption">15 days ago</span>
                   <span class="video__category caption">Food & Drink</span>
                 </div>
@@ -506,8 +458,8 @@
               <div class="video">
                 <div class="video__thumbnail">
                   <img
-                    src="./assets/imgs/video-image-12.jpg"
-                    alt="Radio Astronomy"
+                    src="./assets/imgs/video-image-21.jpg"
+                    alt="Astronomy Or Astrology"
                     class="video__image"
                   />
                   <span class="video__duration">9:05</span>
@@ -515,7 +467,7 @@
                 <h4 class="video__title">Radio Astronomy</h4>
                 <div class="video__info">
                   <span class="video__views caption">1k views</span>
-                  .
+                  <span class="video-card__views">&#183;</span>
                   <span class="video__time-ago caption">11 months ago</span>
                   <span class="video__category caption">Food & Drink</span>
                 </div>
@@ -523,34 +475,17 @@
               <div class="video">
                 <div class="video__thumbnail">
                   <img
-                    src="./assets/imgs/video-image-13.jpg"
-                    alt="A Good Autoresponder"
+                    src="./assets/imgs/video-image-22.jpg"
+                    alt="Astronomy Or Astrology"
                     class="video__image"
                   />
-                  <span class="video__duration">3:40</span>
+                  <span class="video__duration">7:08</span>
                 </div>
                 <h4 class="video__title">A Good Autoresponder</h4>
                 <div class="video__info">
                   <span class="video__views caption">45k views</span>
-                  .
+                  <span class="video-card__views">&#183;</span>
                   <span class="video__time-ago caption">2 months ago</span>
-                  <span class="video__category caption">Food & Drink</span>
-                </div>
-              </div>
-              <div class="video">
-                <div class="video__thumbnail">
-                  <img
-                    src="./assets/imgs/video-image-14.jpg"
-                    alt="Baby Monitor Technology"
-                    class="video__image"
-                  />
-                  <span class="video__duration">1:56</span>
-                </div>
-                <h4 class="video__title">Medical Care Is Just</h4>
-                <div class="video__info">
-                  <span class="video__views caption">86k views</span>
-                  .
-                  <span class="video__time-ago caption">7 days ago</span>
                   <span class="video__category caption">Food & Drink</span>
                 </div>
               </div>
@@ -558,17 +493,17 @@
               <div class="video">
                 <div class="video__thumbnail">
                   <img
-                    src="./assets/imgs/video-image-15.jpg"
-                    alt="Asteroids"
+                    src="./assets/imgs/video-image-22.jpg"
+                    alt="Astronomy Or Astrology"
                     class="video__image"
                   />
-                  <span class="video__duration">4:20</span>
+                  <span class="video__duration">7:08</span>
                 </div>
-                <h4 class="video__title">Asteroids</h4>
+                <h4 class="video__title">A Good Autoresponder</h4>
                 <div class="video__info">
-                  <span class="video__views caption">123k views</span>
-                  .
-                  <span class="video__time-ago caption">4 months ago</span>
+                  <span class="video__views caption">45k views</span>
+                  <span class="video-card__views">&#183;</span>
+                  <span class="video__time-ago caption">2 months ago</span>
                   <span class="video__category caption">Food & Drink</span>
                 </div>
               </div>
