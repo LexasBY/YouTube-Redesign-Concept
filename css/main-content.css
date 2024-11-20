@@ -1,5 +1,5 @@
 html, body {
-    overflow-x: hidden; /* Запрещает горизонтальную прокрутку */
+    overflow-x: hidden; 
   }
   
 .layout {
@@ -38,6 +38,7 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 31px;
+    margin-bottom: 14px;
   }
   
   .profile-section {
@@ -61,8 +62,15 @@ html, body {
   }
   
   .profile-section__name {
-    font: normal 700 26px/33px 'Mulish', sans-serif;
+    font-family: 'Mulish', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32.63px; 
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
   }
+  
   
   .carousel-controls {
     display: flex;

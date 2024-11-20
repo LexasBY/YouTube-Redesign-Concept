@@ -3,639 +3,855 @@
     flex-direction: column;
     gap: 35px;
     padding: 0 5px;
-    max-width: 1120px; /* Фиксированная ширина в соответствии с макетом */
-  margin: 0 auto; /* Центрирование на странице */
-  }
-  .main__content_channel-page {
-    gap: 33px;
-  }
-.channel-page {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  width: 100%;
-  padding: 0 65px 0 0;
-  transform: translateY(-20px);
+    max-width: 1120px;
+    margin: 0 auto;
 }
-.channel-page__image {
-  background-image: url("../assets/imgs/channel-image.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 14px;
-  height: 280px;
-}
-.channel-page__main {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.channel-page__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.channel-page__header-left-side-container {
-  display: grid;
-  grid-template-areas: "a b" "a c";
-  gap: 1px 14px;
-}
-.channel-page__logo {
-  grid-area: a;
 
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+.main__content_channel-page {
+    gap: 33px;
 }
+
+.channel-page {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    padding: 0 65px 0 0;
+    transform: translateY(-20px);
+}
+
+.channel-page__image {
+    background-image: url("../assets/imgs/channel-image.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 14px;
+    height: 280px;
+}
+
+.channel-page__main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.channel-page__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.channel-page__header-left-side-container {
+    display: grid;
+    grid-template-areas: "a b" "a c";
+    gap: 1px 14px;
+}
+
+.channel-page__logo {
+    grid-area: a;
+
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
 .channel-page__owner-name {
-  grid-area: b;
-  align-self: end;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 33px;
-  font-family: 'Mulish', sans-serif;
-  margin-bottom: 0;
+    grid-area: b;
+    align-self: end;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 33px;
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    letter-spacing: 0.3px;
 }
+
 .channel-page__subscription-info {
-  grid-area: c;
-  align-self: start;
-  margin-top: 0;
+    grid-area: c;
+    align-self: start;
+    margin: 0;
 }
+
 .channel-page__header-right-side-container {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  align-self: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-self: flex-start;
 }
+
 .channel-page__main-container {
-  display: grid;
-  grid-template-areas: "a b" "c b";
-  row-gap: 59px;
+    display: grid;
+    grid-template-areas: "a b" "c b";
+    row-gap: 59px;
 }
+
 .channel-page__sections-links {
-  grid-area: a;
+    grid-area: a;
 }
+
 .channel-page__video-description {
-  grid-area: c;
+    grid-area: c;
 }
+
 .channel-page__subscriptions {
-  grid-area: b;
-  margin-right: 78px;
-  width: 194px;
-  padding-top: 3px;
+    grid-area: b;
+    margin-right: 78px;
+    width: 188px;
+    height: 260px;
+    padding-top: 3px;
+}
+
+.subscriptions__title {
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 5px;
 }
 
 .button {
-  font-family: "Mulish", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  padding: 10px 19px;
-  background-color: #ff0000;
-  border: none;
-  border-radius: 20px;
-  color: #ffffff;
-  width: 154px;
-  height: 40px;
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 10px 19px;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    width: 154px;
+    height: 40px;
 }
+
 .caption {
-  color: rgba(0, 0, 0, 0.3);
-  font: normal 400 14px/18px "Mulish", sans-serif;
+    color: rgba(0, 0, 0, 0.3);
+    font: normal 400 14px/16px "Mulish", sans-serif;
+}
+
+.caption__food {
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.08px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(0, 0, 0, 0.3);
+    padding: 9px 0 0 6px;
+    letter-spacing: 0.3px;
 }
 
 .video-description {
-  display: grid;
-  grid-template-columns: 540px 1fr;
-  column-gap: 32px;
+    display: grid;
+    grid-template-columns: 540px 1fr;
+    column-gap: 32px;
 }
+
 .video-description__show {
 
-    
-        position: relative;
-        width: 540px;
-        height: 250px;
-        overflow: hidden;
-        z-index: 2;
-    
-  }
-  
-  .show__time {
-    position: absolute; /* Абсолютное позиционирование относительно родителя */
+
+    position: relative;
+    width: 540px;
+    height: 250px;
+    overflow: hidden;
+    z-index: 2;
+
+}
+
+.show__time {
+    position: absolute;
     bottom: 10px;
     right: 10px;
     padding: 3px 9px;
     border-radius: 12px;
-    color: #ffffff; /* Или используйте переменную $time-duration-text-color */
-    background-color: rgba(0, 0, 0, 0.7); /* Или используйте $time-duration-caption-bg-color */
-    font-size: 12px; /* Настройте размер шрифта */
-    line-height: 16px; /* Настройте высоту строки */
-  }
-  
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+    line-height: 16px;
+}
+
 .video-description__info {
-  padding: 0 0 15px 0;
+    padding: 0;
 }
 
 .video-description__title {
-  font: normal bold 26px/34px "Mulish", sans-serif;
-  margin-bottom: 10px;
-  padding-right: 190px;
+    font: normal bold 26px/34px "Mulish", sans-serif;
+    margin-bottom: 10px;
+    padding-right: 190px;
+    margin-top: 17px;
+    letter-spacing: 0.1px;
 }
 
 .video-description__text {
-  font: normal normal 16px/22px "Mulish", sans-serif;
-  margin-bottom: 30px;
-  padding-right: 80px;
+    font: normal normal 16px/22px "Mulish", sans-serif;
+    margin-bottom: 30px;
+    margin-top: 3px;
+    padding-right: 78px;
+    letter-spacing: 0.35px;
+
+}
+
+.video-description__details {
+    font: normal normal 16px/22px "Mulish", sans-serif;
+    color: rgba(0, 0, 0, 0.3);
+    margin-bottom: 0px;
+    margin-top: 3px;
+    padding-right: 78px;
+    letter-spacing: 0.9px;
 }
 
 .video-description__more {
-  border: 0;
-  background-color: transparent;
+    border: 0;
+    background-color: transparent;
 }
 
 .video-info__icon {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  overflow: hidden;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  grid-row: 1 / 4;
+    grid-row: 1 / 4;
 }
 
 .video-info__icon img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .video-info__left-side-container {
-  display: grid;
-  grid-template-columns: 80px 1fr;
-  grid-template-rows: repeat(4, min-content);
-  column-gap: 12px;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: repeat(4, min-content);
+    column-gap: 12px;
 
-  position: relative;
-  left: -6px;
+    position: relative;
+    left: -6px;
 }
 
 .video-info__show-more-button {
-  grid-column: 2 / 3;
-  grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
 }
 
 .video-info__title {
-  font: normal 700 26px/33px "Mulish", sans-serif;
-  padding-bottom: 2px;
+    font: normal 700 26px/33px "Mulish", sans-serif;
+    padding-bottom: 2px;
 }
 
 .video-info__published {
-  font: normal 400 13px/16px "Mulish", sans-serif;
-  color: #757575; /* Замените на нужный цвет */
-  padding-bottom: 15px;
+    font: normal 400 13px/16px "Mulish", sans-serif;
+    color: #757575;
+    /* Замените на нужный цвет */
+    padding-bottom: 15px;
 }
 
 .video-info__text {
-  font: normal 400 16px/22px "Mulish", sans-serif;
-  padding-bottom: 15px;
+    font: normal 400 16px/22px "Mulish", sans-serif;
+    padding-bottom: 15px;
 }
 
 .video-info__show-more-button {
-  font: normal 400 20px/25px "Mulish", sans-serif;
-  color: #757575; /* Замените на нужный цвет */
-  background-color: transparent;
-  border: 0;
-  justify-self: left;
+    font: normal 400 20px/25px "Mulish", sans-serif;
+    color: #757575;
+    /* Замените на нужный цвет */
+    background-color: transparent;
+    border: 0;
+    justify-self: left;
 }
 
 .subscription-link {
-  display: grid;
-  grid-template-columns: 26px 1fr;
-  align-items: center;
-  gap: 13px;
+    display: grid;
+    grid-template-columns: 26px 1fr;
+    align-items: center;
+    gap: 13px;
 
-  height: 26px;
+    height: 26px;
 }
+
 .subscription-link__icon {
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
 }
+
 .subscription-link_big {
-  height: 50px;
-  grid-template-columns: 50px 1fr;
-  gap: 22px;
-  .subscription-link__icon {
-    width: 50px;
     height: 50px;
-  }
-  .subscription-link__text {
-    font: normal 700 18px/23px "Mulish", sans-serif;
-  }
+    grid-template-columns: 50px 1fr;
+    gap: 22px;
+
+    .subscription-link__icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .subscription-link__text {
+        font: normal 700 18px/23px "Mulish", sans-serif;
+    }
 }
 
 .sections-links__list,
 .sections-links__list-general-elements,
 .sections-links__list-additional-elements {
-  display: flex;
-  flex-direction: row;
-  gap: 72px;
-  list-style: none; 
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .sections-links__item-more-arrow {
-  display: none;
+    display: none;
 }
 
 .sections-links__link {
-  font: normal normal 18px/23px "Mulish", sans-serif;
-  color: #000000;
-  text-decoration: none;
+    font: normal normal 18px/23px "Mulish", sans-serif;
+    color: #000000;
+    text-decoration: none;
+    letter-spacing: 0.05px;
 }
 
 .sections-links__link:hover {
-  color: #ff0000;
-  text-decoration: underline;
+    color: #ff0000;
+    text-decoration: underline;
 }
 
 .sections-links__link_active {
-  color: #ff0000;
-  text-decoration: underline;
+    color: #ff0000;
+    text-decoration: underline;
 }
+
 /* Основной контейнер */
 .preview {
     display: flex;
     flex-direction: column;
     gap: 31px;
-  }
-  
-  /* Заголовок секции */
-  .preview__header {
+}
+
+.preview--large {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+    margin-bottom: 16px;
+}
+
+/* Заголовок секции */
+.preview__header {
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-right: 144px;
-  }
-  
-  .profile-section {
+}
+
+.preview__header--channel {
+    height: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.preview__header--large {
+    height: 33px;
+}
+
+.profile-section {
     display: flex;
     flex-direction: row;
-    align-items: center; 
-    gap: 10px; /* Отступ между аватаркой и именем */
-  }
-  
-  .profile-section__image {
-    width: 50px; /* Размер аватарки */
-    height: 50px;
-    border-radius: 50%; /* Скругление аватарки */
-  }
-  .preview--large {
-    gap: 40px; /* Увеличенный отступ между элементами */
-  }
-  .preview__body--large {
-    gap: 50px; /* Расстояние между карточками видео */
-  }
-  .profile-section__name {
-    font: bold 20px/25px "Mulish", sans-serif; /* Шрифт для имени */
-    margin: 0; /* Убираем отступы по умолчанию */
-  }
+    align-items: center;
+    gap: 10px;
+}
 
-  .preview__title {
+.profile-section__image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.preview__body--large {
+    gap: 40px;
+}
+
+.profile-section__name {
+    font-family: 'Mulish', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32.63px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding-left: 11px;
+    margin: 0;
+}
+
+.preview__title {
+    margin: 0;
     font: normal 700 26px/33px 'Mulish', sans-serif;
-  }
-  
-  .preview__controls {
+}
+.preview__title--channel {
+margin-top: 10px;
+margin-left: 6px;
+
+}
+
+.preview__controls {
     display: flex;
     align-items: center;
     gap: 10px;
-  }
-  
-  .preview__control {
-    cursor: pointer; /* Указатель при наведении */
-  width: 24px; /* Размер стрелки */
-  height: 24px;
-  }
-  
-  .preview__control--left,
-  .preview__control--right {
+    align-self: flex-end;
+    /* padding-right: 149px; */
+}
+
+.preview__control {
+    cursor: pointer;
     width: 24px;
     height: 24px;
-  }
-  
-  /* Содержимое */
-  .preview__body {
+}
+
+.preview__control--left,
+.preview__control--right {
+    width: 24px;
+    height: 24px;
+}
+
+/* Содержимое */
+.preview__body {
     display: flex;
     gap: 40px;
     width: 100%;
     overflow-x: auto;
     scroll-behavior: smooth;
-    
-  }
-  
-  .preview__body::-webkit-scrollbar {
+
+}
+
+.preview__body--channel {
+    margin-top: 5px;
+}
+
+.preview__body::-webkit-scrollbar {
     display: none;
-  }
-  
-  /* Карточка видео */
-  .video {
+}
+
+/* Карточка видео */
+.video {
     display: flex;
     flex-direction: column;
-    gap: 11px;
     cursor: pointer;
     flex-shrink: 0;
     width: 250px;
-    height: 215px; 
+    height: 200px;
     box-sizing: border-box;
-  }
-  
-  .video__thumbnail {
+}
+
+.video__thumbnail {
     position: relative;
     width: 250px;
     height: 150px;
     border-radius: 14px;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-sizing: border-box;
-  }
-  
-  .video__image {
+    margin-bottom: 10px;
+}
+
+.video__image {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
 
-  .video--large {
-    width: 540px; /* Увеличенная ширина */
-    height: 300px; /* Увеличенная высота */
+.video--large {
+    width: 540px;
+    height: 300px;
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Отступ между содержимым карточки */
-  }
-  
-  .video__thumbnail--large {
-    width: 540px; /* Увеличенная ширина превью */
-    height: 250px; /* Увеличенная высота превью */
+
+}
+
+.video__thumbnail--large {
+    width: 540px;
+    height: 250px;
     border-radius: 14px;
-    overflow: hidden;
+    box-sizing: border-box;
     position: relative;
-  }
-  
-  .video__image {
+    margin-bottom: 10px;
+}
+
+.video__image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Масштабирование изображения без потери пропорций */
-  }
-  
-  
-  .video__duration {
+    object-fit: cover;
+}
+
+
+.video__duration {
     position: absolute;
     bottom: 10px;
     right: 10px;
     background-color: rgba(0, 0, 0, 0.7);
     color: #ffffff;
-    padding: 3px 9px;
-    font: normal 400 12px/16px 'Mulish', sans-serif;
-    border-radius: 12px;
-  }
-  
-  /* Описание видео */
-  .video__title {
-    font-family: 'Mulish', sans-serif; 
-    font-size: 16px; 
+    padding: 6px 12px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    text-align: right;
+    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Описание видео */
+.video__title {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
     font-weight: 700;
-    line-height: 20.08px; 
-    text-align: left; 
-    text-underline-position: from-font; 
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    margin: 0; 
-  }
-  
-  
-  .video__info {
+    margin: 0;
+    padding-left: 1px;
+    margin-bottom: 4px;
+}
+
+
+
+
+.video__info {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    font-family: 'Mulish', sans-serif;
     font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
     color: #c2c2c2;
-  }
-  
-  
-  .video__views,
-  .video__time-ago,
-  .video__category {
+    text-align: left;
+    line-height: 16px;
+    padding: 0;
+}
+
+
+
+
+.video__views,
+.video__time-ago,
+.video__category {
     white-space: nowrap;
-    overflow: visible; 
-  text-overflow: unset; 
-    margin-right: 5px;
-  }
-  
-  /* Адаптивность */
-  @media (max-width: 768px) {
+    overflow: visible;
+    text-overflow: unset;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
     .preview {
-      gap: 20px;
+        gap: 20px;
     }
-  
+
     .preview__header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
-      padding-right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding-right: 0;
     }
-  
+
     .preview__body {
-      gap: 20px;
-      flex-wrap: wrap;
+        gap: 20px;
+        flex-wrap: wrap;
     }
-  
+
     .video {
-      max-width: 180px;
-      min-width: 120px;
-      gap: 8px;
+        max-width: 180px;
+        min-width: 120px;
+        gap: 8px;
     }
-  
+
     .video__title {
-      font: normal 700 14px/18px 'Mulish', sans-serif;
+        font: normal 700 14px/18px 'Mulish', sans-serif;
     }
-  
+
     .video__info {
-      font: normal 400 12px/16px 'Mulish', sans-serif;
+        font: normal 400 12px/16px 'Mulish', sans-serif;
     }
-  }
-  
-  @media (max-width: 552px) {
+}
+
+@media (max-width: 552px) {
     .preview__header {
-      gap: 15px;
+        gap: 15px;
     }
-  
+
     .video {
-      width: 100%;
+        width: 100%;
     }
-  
+
     .video__thumbnail {
-      border-radius: 8px;
+        border-radius: 8px;
     }
-  
+
     .video__title {
-      font: normal 700 12px/16px 'Mulish', sans-serif;
+        font: normal 700 12px/16px 'Mulish', sans-serif;
     }
-  
+
     .video__info {
-      font: normal 400 10px/14px 'Mulish', sans-serif;
+        font: normal 400 10px/14px 'Mulish', sans-serif;
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .preview__body {
-      flex-direction: column;
-      gap: 15px;
+        flex-direction: column;
+        gap: 15px;
     }
-  
+
     .video {
-      width: 100%;
+        width: 100%;
     }
-  
+
     .video__info {
-      display: block;
-      text-align: left;
+        display: block;
+        text-align: left;
     }
-  }
-  
+}
+
 @media (max-width: 1440px) {
     .channel-page {
-      padding: 0;
+        padding: 0;
     }
-  
+
     .channel-page__subscriptions {
-      display: none;
+        display: none;
     }
-  
+
     .channel-page__main-container {
-      row-gap: 0;
+        row-gap: 0;
     }
-  
+
     .video-description__title,
     .video-description__text {
-      padding-right: 10px;
+        padding-right: 10px;
     }
-  
+
     .sections-links__list-additional-elements {
-      display: none;
+        display: none;
     }
-  
+
     .sections-links__item-more-arrow {
-      display: block;
+        display: block;
     }
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .preview {
-      gap: 20px;
+        gap: 20px;
     }
-  
+
     .preview__header {
-      padding-right: 0;
+        padding-right: 0;
     }
-  
+
     .preview__body {
-      gap: 20px;
+        gap: 20px;
     }
-  
+
     .video__title {
-      font: normal 700 14px/18px "Mulish", sans-serif;
+        font: normal 700 14px/18px "Mulish", sans-serif;
     }
-  
+
     .video__info {
-      font: normal 400 12px/16px "Mulish", sans-serif;
+        font: normal 400 12px/16px "Mulish", sans-serif;
     }
-  
+
     .video {
-      align-items: center;
-      gap: 4px;
+        align-items: center;
+        gap: 4px;
     }
-  
+
     .video_channel-page {
-      align-items: stretch;
+        align-items: stretch;
     }
-  }
-  
-  @media (max-width: 552px) {
+}
+
+@media (max-width: 552px) {
     .channel-page {
-      gap: 0;
-      transform: translateY(0);
+        gap: 0;
+        transform: translateY(0);
     }
-  
+
     .channel-page__image {
-      height: 100px;
-      border-radius: 0;
-      margin: 0 -16px;
+        height: 100px;
+        border-radius: 0;
+        margin: 0 -16px;
     }
-  
+
     .channel-page__main {
-      gap: 31px;
+        gap: 31px;
     }
-  
+
     .channel-page__owner-name {
-      font: normal 700 20px/25px "Mulish", sans-serif;
+        font: normal 700 20px/25px "Mulish", sans-serif;
     }
-  
+
     .channel-page__logo {
-      width: 70px;
-      height: 70px;
+        width: 70px;
+        height: 70px;
     }
-  
+
     .channel-page__header-left-side-container {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 4px;
-      margin-top: -35px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        margin-top: -35px;
     }
-  
+
     .channel-page__header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 18px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
     }
-  
+
     .channel-page__header-right-side-container {
-      align-self: auto;
-      gap: 0;
+        align-self: auto;
+        gap: 0;
     }
-  
+
     .channel-page__subscription-info {
-      font: normal 12px/15px "Mulish", sans-serif;
+        font: normal 12px/15px "Mulish", sans-serif;
     }
-  
+
     .channel-page__notification-icon {
-      display: none;
+        display: none;
     }
-  
+
     .channel-page__button {
-      width: 120px;
-      height: 34px;
+        width: 120px;
+        height: 34px;
     }
-  
+
     .video-description {
-      display: none;
+        display: none;
     }
-  
+
     .sections-links__list-general-elements {
-      gap: 40px;
+        gap: 40px;
     }
-  
+
     .sections-links__link {
-      font: normal 700 14px/18px "Mulish", sans-serif;
+        font: normal 700 14px/18px "Mulish", sans-serif;
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .video__info {
-      display: block;
-      text-align: left;
+        display: block;
+        text-align: left;
     }
-  
+
     .video__title {
-      font: normal 700 12px/16px "Mulish", sans-serif;
+        font: normal 700 12px/16px "Mulish", sans-serif;
     }
-  }
-  
+}
+
+
+/* media for main cont*/
+
+@media (max-width: 768px) {
+    .preview__header,
+    .channel-page__video-description {
+        display: none;
+      }
+      .channel-page__header{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position: relative;
+        z-index:1
+        
+      }
+      .channel-page__image {
+        height: 100px; 
+        width: 100vw; 
+        margin: 0; 
+        padding: 0; 
+        display: block;
+        position: relative;
+      }
+      
+      .channel-page__header-left-side-container{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        margin-left: 30px;
+        margin-right: auto;
+        margin-top: -75px;
+        
+      }
+      .channel-page__notification-icon {
+        display: none;
+      }
+      .preview {
+        width: 100vw; 
+        margin: 0 auto; 
+        padding: 0; 
+      }
+
+      .preview__body {
+        display: flex;
+        flex-direction: column;
+        gap: 40px; 
+        align-items: center; 
+        width: 100%; 
+      }
+      .preview__body--channel {
+        display: flex;
+        flex-direction: column;
+        gap: 180px; 
+        align-items: center; 
+        width: 100%; 
+      }
+      
+      .video {
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+        max-width: 500px; 
+        align-items: center; 
+        margin-bottom: 4px;
+      }
+    
+      /* Превью видео */
+      .video__thumbnail {
+        width: 100%; 
+        height: auto; 
+        max-width: 500px; 
+        border-radius: 14px;
+      }
+    
+      .video__image {
+        width: 100%; /* Растягиваем изображение */
+        height: auto;
+        object-fit: cover;
+      }
+    
+      .video__title {
+        font-family: 'Mulish', sans-serif;
+        font-size: 16px; 
+        font-weight: 700;
+        line-height: 20px;
+        text-align: left;
+        margin: 0; 
+        width: 100%;
+        max-width: 500px; 
+      }
+}
