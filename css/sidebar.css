@@ -16,8 +16,8 @@
 }
 
 .sidebar__nav > :nth-child(4) {
-    margin-top: 32px;
-  }
+  margin-top: 32px;
+}
 
 .sidebar__nav-link {
   display: grid;
@@ -78,7 +78,7 @@
   text-decoration: none;
 }
 
- .sidebar__subscriptions-icon {
+.sidebar__subscriptions-icon {
   width: 26px;
   height: 26px;
   border-radius: 50%;
