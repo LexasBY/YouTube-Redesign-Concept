@@ -338,6 +338,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 28px;
+    margin-top: 13px;
     margin-bottom: 16px;
 }
 
@@ -552,62 +553,7 @@ margin-left: 6px;
     overflow: visible;
     text-overflow: unset;
 }
-
-/* Адаптивность */
-@media (max-width: 768px) {
-    .preview {
-        gap: 20px;
-    }
-
-    .preview__header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        padding-right: 0;
-    }
-
-    .preview__body {
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-
-    .video {
-        max-width: 180px;
-        min-width: 120px;
-        gap: 8px;
-    }
-
-    .video__title {
-        font: normal 700 14px/18px 'Mulish', sans-serif;
-    }
-
-    .video__info {
-        font: normal 400 12px/16px 'Mulish', sans-serif;
-    }
-}
-
-@media (max-width: 552px) {
-    .preview__header {
-        gap: 15px;
-    }
-
-    .video {
-        width: 100%;
-    }
-
-    .video__thumbnail {
-        border-radius: 8px;
-    }
-
-    .video__title {
-        font: normal 700 12px/16px 'Mulish', sans-serif;
-    }
-
-    .video__info {
-        font: normal 400 10px/14px 'Mulish', sans-serif;
-    }
-}
-
+/* max-width: 480px
 @media (max-width: 480px) {
     .preview__body {
         flex-direction: column;
@@ -622,46 +568,24 @@ margin-left: 6px;
         display: block;
         text-align: left;
     }
-}
 
-@media (max-width: 1440px) {
-    .channel-page {
-        padding: 0;
+    .video__title {
+        font: normal 700 12px/16px "Mulish", sans-serif;
     }
+} */
 
-    .channel-page__subscriptions {
-        display: none;
-    }
-
-    .channel-page__main-container {
-        row-gap: 0;
-    }
-
-    .video-description__title,
-    .video-description__text {
-        padding-right: 10px;
-    }
-
-    .sections-links__list-additional-elements {
-        display: none;
-    }
-
-    .sections-links__item-more-arrow {
-        display: block;
-    }
-}
-
-@media (max-width: 768px) {
-    .preview {
-        gap: 20px;
-    }
-
+/* max-width: 552px */
+@media (max-width: 552px) {
     .preview__header {
-        padding-right: 0;
+        gap: 15px;
     }
 
-    .preview__body {
-        gap: 20px;
+    .video {
+        width: 100%;
+    }
+
+    .video__thumbnail {
+        border-radius: 8px;
     }
 
     .video__title {
@@ -672,17 +596,6 @@ margin-left: 6px;
         font: normal 400 12px/16px "Mulish", sans-serif;
     }
 
-    .video {
-        align-items: center;
-        gap: 4px;
-    }
-
-    .video_channel-page {
-        align-items: stretch;
-    }
-}
-
-@media (max-width: 552px) {
     .channel-page {
         gap: 0;
         transform: translateY(0);
@@ -752,106 +665,141 @@ margin-left: 6px;
     }
 }
 
-@media (max-width: 480px) {
-    .video__info {
-        display: block;
-        text-align: left;
-    }
-
-    .video__title {
-        font: normal 700 12px/16px "Mulish", sans-serif;
-    }
-}
-
-
-/* media for main cont*/
-
+/* max-width: 768px */
 @media (max-width: 768px) {
+    .layout .wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: none; 
+        padding: 0; 
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 0; 
+        margin: 0; 
+        gap: 20px;
+    }
+    .preview {
+        gap: 20px;
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+    }
+
     .preview__header,
     .channel-page__video-description {
         display: none;
-      }
-      .channel-page__header{
+    }
+
+    .preview__body {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        margin-left: 20px;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .video {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 600px; 
+        box-sizing: border-box;
+        margin-bottom: 120px;
+        
+    }
+
+    .video__thumbnail {
+        position: relative;
+        width: 100%; 
+        height: auto; 
+        border-radius: 14px;
+        margin-bottom: 10px; 
+    }
+
+    .video__image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .video__title {
+        font: normal 700 16px/20px "Mulish", sans-serif;
+        text-align: left;
+        margin: 0;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .video__info {
+        font: normal 400 12px/16px "Mulish", sans-serif;
+    }
+
+    .channel-page__header {
         display: flex;
         flex-direction: column;
         gap: 30px;
         position: relative;
-        z-index:1
-        
-      }
-      .channel-page__image {
-        height: 100px; 
-        width: 100vw; 
-        margin: 0; 
-        padding: 0; 
+        z-index: 1;
+    }
+
+    .channel-page__image {
+        height: 100px;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
         display: block;
         position: relative;
-      }
-      
-      .channel-page__header-left-side-container{
+    }
+
+    .channel-page__header-left-side-container {
         display: flex;
         flex-direction: column;
         gap: 2px;
         margin-left: 30px;
         margin-right: auto;
         margin-top: -75px;
-        
-      }
-      .channel-page__notification-icon {
-        display: none;
-      }
-      .preview {
-        width: 100vw; 
-        margin: 0 auto; 
-        padding: 0; 
-      }
+    }
+    .channel-page__header-right-side-container {
+        margin-left: 10px;
+    }
 
-      .preview__body {
-        display: flex;
-        flex-direction: column;
-        gap: 40px; 
-        align-items: center; 
-        width: 100%; 
-      }
-      .preview__body--channel {
-        display: flex;
-        flex-direction: column;
-        gap: 180px; 
-        align-items: center; 
-        width: 100%; 
-      }
-      
-      .video {
-        display: flex;
-        flex-direction: column;
-        width: 100%; 
-        max-width: 500px; 
-        align-items: center; 
-        margin-bottom: 4px;
-      }
-    
-      /* Превью видео */
-      .video__thumbnail {
-        width: 100%; 
-        height: auto; 
-        max-width: 500px; 
-        border-radius: 14px;
-      }
-    
-      .video__image {
-        width: 100%; /* Растягиваем изображение */
-        height: auto;
-        object-fit: cover;
-      }
-    
-      .video__title {
-        font-family: 'Mulish', sans-serif;
-        font-size: 16px; 
-        font-weight: 700;
-        line-height: 20px;
-        text-align: left;
-        margin: 0; 
-        width: 100%;
-        max-width: 500px; 
-      }
+    .channel-page__notification-icon {
+        display: none;
+    }
+
+    .sections-links__list-general-elements {
+        margin-left: 30px;
+    }
+}
+
+/* max-width: 1440px */
+@media (max-width: 1440px) {
+    .channel-page {
+        padding: 0;
+    }
+
+    .channel-page__subscriptions {
+        display: none;
+    }
+
+    .channel-page__main-container {
+        row-gap: 0;
+    }
+
+    .video-description__title,
+    .video-description__text {
+        padding-right: 10px;
+    }
+
+    .sections-links__list-additional-elements {
+        display: none;
+    }
+
+    .sections-links__item-more-arrow {
+        display: block;
+    }
 }

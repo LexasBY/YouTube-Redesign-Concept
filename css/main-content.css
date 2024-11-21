@@ -175,7 +175,7 @@ html, body {
       align-self: center;
     }
   }
-  
+/*   
   @media (max-width: 480px) {
     .profile-section__header {
       display: none;
@@ -196,7 +196,7 @@ html, body {
     .video-card__title {
       font-size: 16px;
     }
-  }
+  } */
   
   /* Медиазапросы */
   @media (max-width: 1200px) {
