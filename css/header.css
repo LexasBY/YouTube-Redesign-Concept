@@ -25,14 +25,13 @@
 
 .header__search-input {
   position: relative;
-  padding-left: 59px;
+  padding-left: 29px;
 }
 
 .header__search-input input {
   height: 44px;
   width: 830px;
-  background-color: #EBEBEB;
-  ;
+  background-color: #ebebeb;
   border: 0;
   border-radius: 20px;
   padding: 0;
@@ -80,11 +79,11 @@
   position: absolute;
   top: -4px;
   right: -5px;
-  background-color: #FF0000;
+  background-color: #ff0000;
   padding: 1px 5px 2px;
   border-radius: 50%;
   font: normal 700 12px/15px "Mulish", sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
